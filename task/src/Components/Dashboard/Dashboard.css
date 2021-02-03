@@ -1,9 +1,18 @@
 .dashboard-container
 {
     width: 85%;
+    height: 650px;
     margin-right: 0;
     display: flex;
     flex-direction: column;
+    border-style: dotted;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 30%;
+    border-style: dashed;
     
 }
 .cell1{
@@ -50,10 +59,4 @@
     margin: 30px;
     width: 10%;
     margin-right: 100px;
-}
-.row{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 30%;
 }

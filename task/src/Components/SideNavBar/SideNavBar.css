@@ -1,6 +1,7 @@
 .side-nav-container{
-    margin-top: 20px;
+    padding-top: 20px;
     width: 10%;
     display: flex;
     flex-direction: column;
+    background-color:  rgb(70, 68, 68);
 }

@@ -1,11 +1,12 @@
 import React from 'react';
+import TradeTable from "./TradeTable/TradeTable.js";
 import "./Dashboard.css";
 
 function Dashboard() {
     return (
         <div className="dashboard-container"> 
             <div className="row">
-                <div className="cell1">Cell 1</div>
+                <TradeTable />
                 <div className="cell2">Cell 2</div>
                 <div className="cell3">Cell 3</div>
             </div>
