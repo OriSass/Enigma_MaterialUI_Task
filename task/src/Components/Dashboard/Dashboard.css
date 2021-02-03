@@ -1,5 +1,5 @@
-.dashboard-container
-{
+.dashboard-container {
+    background-color: rgb(102, 95, 95);
     width: 85%;
     height: 650px;
     margin-right: 0;
@@ -7,55 +7,64 @@
     flex-direction: column;
     border-style: dotted;
 }
-.row{
+
+.row {
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 30%;
-    border-style: dashed;
-    
+    height: 34%;
 }
-.cell1{
+
+.cell1 {
     margin: 30px;
     width: 50%;
 }
-.cell2{
+
+.cell2 {
     margin: 30px;
     width: 15%;
 }
-.cell3{
+
+.cell3 {
     margin: 30px;
     width: 35%;
 }
-.cell4{
+
+.cell4 {
     margin: 30px;
     width: 20%;
 }
-.cell5{
-    margin: 30px;
-    width: 45%;
-}
-.cell6{
-    margin: 30px;
-    width: 20%;
-}
-.cell7{
-    margin: 30px;
+
+.cell5 {
     width: 15%;
 }
-.cell8{
+
+.cell6 {
+    width: 40%;
+}
+
+.cell7 {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+}
+
+.cell8 {
     margin: 30px;
     width: 10%;
 }
-.cell9{
+
+.cell9 {
     margin: 30px;
     width: 30%;
 }
-.cell10{
+
+.cell10 {
     margin: 30px;
     width: 30%;
 }
-.cell11{
+
+.cell11 {
     margin: 30px;
     width: 10%;
     margin-right: 100px;
