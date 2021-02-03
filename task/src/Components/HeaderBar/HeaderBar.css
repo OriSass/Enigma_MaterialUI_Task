@@ -1,11 +1,16 @@
-.header{
+.header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     background-color: rgb(70, 68, 68);
 }
-.date-time{
+
+.date-time {
     background-color: grey;
     height: auto;
     padding: 10px;
+}
+
+.frost {
+    padding-left: 10px;
 }

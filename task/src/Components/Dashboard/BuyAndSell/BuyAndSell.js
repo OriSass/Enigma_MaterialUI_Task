@@ -9,18 +9,19 @@ import NativeSelect from "@material-ui/core/NativeSelect";
 import InputBase from "@material-ui/core/InputBase";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
 import Button from "@material-ui/core/Button";
-import { green, red, deepOrange } from "@material-ui/core/colors";
+import { green, red, teal } from "@material-ui/core/colors";
 import "./BuyAndSell.css";
 
 const BootstrapInput = withStyles((theme) => ({
   root: {
     "label + &": {
       marginTop: theme.spacing(1),
-      width: "15ch",
+      width: "20ch",
     },
   },
   input: {
     borderRadius: 4,
+    width: 100,
     position: "relative",
     backgroundColor: theme.palette.background.paper,
     border: "1px solid #ced4da",
@@ -56,6 +57,7 @@ const useStyles = makeStyles((theme) => ({
   },
   margin: {
     margin: theme.spacing(1),
+    backgroundColor: theme.palette.common.paper,
   },
   small: {
     paddingTop: 5,
@@ -67,7 +69,7 @@ const theme = createMuiTheme({
   palette: {
     primary: green,
     secondary: red,
-    third: deepOrange,
+    third: teal,
   },
 });
 
@@ -79,11 +81,10 @@ function BuyAndSell() {
   };
   return (
     <div className="buy-and-sell-container">
-      <div>tabs</div>
+      <div className="tab">tabs</div>
       <div id="inputs-and-ddl" className="inputs-and-ddl">
         <div className="controller-row">
           <FormControl className={classes.margin}>
-            <InputLabel htmlFor="demo-customized-select-native">Age</InputLabel>
             <NativeSelect
               id="demo-customized-select-native"
               value={age}
@@ -91,24 +92,12 @@ function BuyAndSell() {
               input={<BootstrapInput />}
             >
               <option aria-label="None" value="" />
-              <option value={10}>Ten</option>
+              <option value={10}>Product</option>
               <option value={20}>Twenty</option>
               <option value={30}>Thirty</option>
             </NativeSelect>
           </FormControl>
-
-          <form className={classes.root} noValidate autoComplete="off">
-            <TextField
-              id="outlined-basic"
-              label="Outlined"
-              variant="outlined"
-            />
-          </form>
-        </div>
-
-        <div className="controller-row">
           <FormControl className={classes.margin}>
-            <InputLabel htmlFor="demo-customized-select-native">Age</InputLabel>
             <NativeSelect
               id="demo-customized-select-native"
               value={age}
@@ -116,20 +105,30 @@ function BuyAndSell() {
               input={<BootstrapInput />}
             >
               <option aria-label="None" value="" />
-              <option value={10}>Ten</option>
+              <option value={10}>Fok</option>
               <option value={20}>Twenty</option>
               <option value={30}>Thirty</option>
             </NativeSelect>
           </FormControl>
+        </div>
+
+        <div className="controller-row">
           <form className={classes.root} noValidate autoComplete="off">
             <TextField
               id="outlined-basic"
-              label="Outlined"
+              label="Quantity"
               variant="outlined"
+              placeholder="Quantity"
+            />
+            <TextField
+              id="outlined-basic"
+              label="Sippege-bps"
+              variant="outlined"
+              placeholder="Sippege-bps"
             />
           </form>
         </div>
-        <div className="controller-row">
+        <div className="buttons-row">
           <ThemeProvider theme={theme}>
             <Button
               variant="contained"
@@ -140,11 +139,9 @@ function BuyAndSell() {
             </Button>
           </ThemeProvider>
           <ThemeProvider theme={theme}>
-            <Button
-              variant="contained"
-              color="third"
-              className={classes.small}
-            ></Button>
+            <Button variant="contained" color="third" className={classes.small}>
+              -9698.0
+            </Button>
           </ThemeProvider>
           <ThemeProvider theme={theme}>
             <Button
